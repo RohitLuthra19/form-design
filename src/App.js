@@ -41,7 +41,7 @@ function App() {
             placeholder="First name"
             value={firstName}
             className="input-field"
-            onFocus={() => setError(!error)}
+            onFocus={() => setError(false)}
             onChange={(e) => setFirstName(e.target.value)}
           />
         </div>
@@ -55,7 +55,7 @@ function App() {
             placeholder="Last name"
             value={lastName}
             className="input-field"
-            onFocus={() => setError(!error)}
+            onFocus={() => setError(false)}
             onChange={(e) => setLastName(e.target.value)}
           />
         </div>
@@ -69,7 +69,7 @@ function App() {
             placeholder="Email"
             value={email}
             className="input-field"
-            onFocus={() => setError(!error)}
+            onFocus={() => setError(false)}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
